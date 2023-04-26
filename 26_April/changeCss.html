@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <h2 id="heading">
+        Hello World
+    </h2>
+    <button onclick='document.getElementById("heading").style.color="red"'>Red</button>
+    <button onclick='document.getElementById("heading").style.color="blue"'>Blue</button>
+    <button onclick='document.getElementById("heading").style.color="yellow"'>Yellow</button>
+    <button onclick='document.getElementById("heading").style.color="green"'>Green</button>
+    <button onclick='document.getElementById("heading").style.color="black"'>Black</button>
+
+    <br>
+    <br>
+
+    <!-- changing the background color -->
+    <div id="sectionBelow" style="width: 400px; height: 400px; background-color: blue;">
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <button onclick="handlePink()">Pink</button>
+    <button onclick="handleRed()">Red</button>
+    <button onclick="handleGreen()">Green</button>
+
+    <script>
+        function handlePink() {
+            document.getElementById("sectionBelow").style.backgroundColor="hotpink";
+        }
+        function handleRed() {
+            document.getElementById("sectionBelow").style.backgroundColor="red";
+        }
+        function handleGreen() {
+            document.getElementById("sectionBelow").style.backgroundColor="green";
+        }
+    </script>
+
+</body>
+</html>
