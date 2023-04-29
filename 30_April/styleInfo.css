@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: RGB(17, 35, 42);
+    color: aliceblue;
+}
+
+section {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 25vh;
+    border: 2px dotted aliceblue;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    padding: 3rem;
+}
+
+input {
+    margin-top: 0.3rem;
+}
+
+button {
+
+    padding: 0.2rem;
+
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+#print {
+    background-color: white;
+    color: black;
+}
