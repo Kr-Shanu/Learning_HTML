@@ -12,23 +12,25 @@
     </h1>
 
     <!-- Here is the form -->
-    <form>
+    <div>
         <label>Enter your name</label>
         <br>
-        <input id="nameOfUser" type="text" placeholder="Enter name">
+        <input id="nameOfUser" placeholder="Enter your name">
         <br>
         <br>
-        <button type="submit" onclick="handleChange()">Click to change</button>
-    </form>
+        <!-- when we click this submit button then we need to call handle change function -->
+        <button onclick="handleChange()">Submit</button>
+    </div>
 
 
     <script>
-
+        // here is the handle change function
         function handleChange() {
             
-            document.getElementById("demo1").innerHTML="This is demo1";
+            // what the user has written in the input tag
+            // var stands for variable
             var name = document.getElementById("nameOfUser").value;
-            window.alert("Welcome ", name);
+            window.alert("Welcome "+ name);
         }
     </script>
 </body>
