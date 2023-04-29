@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Usage of functions
+    </h1>
+
+    <!-- Here is the form -->
+    <form>
+        <label>Enter your name</label>
+        <br>
+        <input id="nameOfUser" type="text" placeholder="Enter name">
+        <br>
+        <br>
+        <button type="submit" onclick="handleChange()">Click to change</button>
+    </form>
+
+
+    <script>
+
+        function handleChange() {
+            
+            document.getElementById("demo1").innerHTML="This is demo1";
+            var name = document.getElementById("nameOfUser").value;
+            window.alert("Welcome ", name);
+        }
+    </script>
+</body>
+</html>
