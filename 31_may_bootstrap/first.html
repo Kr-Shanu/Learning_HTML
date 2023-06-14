@@ -1,0 +1,47 @@
+<!-- What is bootstrap -->
+<!-- Bootstrap is all about the css that is already being made -->
+<!-- and put online and we need to import it in our project -->
+<!-- We import the code and then we use it as classes and id's -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Bootstrap Project</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+
+        .parent-row {
+
+            height: 200px;
+            background-color: hotpink;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- what is row -->
+    <!-- One horizontal section is a row -->
+    <!-- What is a column here ? -->
+    <!-- One vertical section inside a row is called as volumn -->
+
+    <!-- do not play around with the classes of bootstreap: do not add anything in the css of the  -->
+    <!-- classes that bootstrap has provided -->
+
+    <div class="row parent-row">
+        <div class="col">
+            <button class="btn btn-primary btn-block">Left</button>
+        </div>
+        <div class="col">
+            <button class="btn btn-info btn-block">Right</button>
+        </div>
+    </div>
+
+</body>
+</html>

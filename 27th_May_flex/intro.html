@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to Flex</title>
+
+    <style>
+
+        body {
+            margin:0px;
+            padding:0px;
+            background-color: black;
+        }
+
+        .parent-container {
+
+            display: flex;
+            justify-content: space-between;
+
+            /* flex direction */
+            /* flex-direction: column-reverse; */
+            /* gap: 50px; */
+        }
+
+
+        #red {
+            background-color: red;
+            width: 20%;
+        }
+
+        #orange {
+            background-color: orange;
+            width: 20%;
+        }
+
+        #hotpink {
+            background-color: hotpink;
+            width: 20%;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Flex:  -->
+    <!-- You have to make the container of the element as display:flex -->
+    <!-- flex-direction: row, column -->
+    <!-- Flex sizing, order, wrapping -->
+
+    <div class="parent">
+        <div class="parent-container">
+            <div id="red">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, possimus! Exercitationem dignissimos,
+                numquam rerum qui repellendus reprehenderit quibusdam nulla quidem excepturi tempora cumque tempore vero
+                necessitatibus, veritatis dolorum blanditiis voluptatum.</div>
+            <div id="orange">Lorem, ipsum </div>
+            <div id="hotpink">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Facilis, possimus! Exercitationem dignissimos,
+                numquam rerum qui repellendus reprehenderit quibusdam nulla quidem excepturi tempora cumque tempore vero
+                necessitatibus, veritatis dolorum blanditiis voluptatum.</div>
+        </div>
+    </div>
+
+</body>
+
+</html>

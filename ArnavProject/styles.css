@@ -1,0 +1,19 @@
+img {
+    float: left;
+    width: 15%;
+}
+
+h1 {
+    text-align: center;
+
+}
+
+.harry {
+    width: 308px;
+}
+
+td {
+    font-size: 50px;
+    border: 2px solid black;
+    text-align: center;
+}

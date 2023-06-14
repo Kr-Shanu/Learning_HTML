@@ -1,0 +1,8 @@
+#square {
+
+    background-color: red;
+    height: 100px;
+    width: 100px;
+    transition: width 3s linear;
+}
+

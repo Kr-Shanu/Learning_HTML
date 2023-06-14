@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: RGB(17, 35, 42);
+            color: aliceblue;
+        }
+
+        section {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 25vh;
+            margin-left: 30vw;
+            margin-right: 30vw;
+            padding: 3rem;
+        }
+
+        input {
+            margin-top: 0.3rem;
+        }
+
+        button {
+
+            padding: 0.2rem;
+
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-color: aquamarine;
+        }
+
+        #print {
+            background-color: white;
+            color: black;
+        }
+    </style>
+
+    <section>
+        <h1>
+            Enter Your Information
+        </h1>
+        <br>
+
+        <div class="form">
+            <label>Enter Your Name</label>
+            <br>
+            <input id="nameOfUser" type="text" placeholder="enter name">
+            <br>
+            <br>
+            <label>Enter Your Age</label>
+            <br>
+            <input id="ageOfUser" type="number" placeholder="enter age">
+            <br>
+            <br>
+            <label>Enter Roll Number</label>
+            <br>
+            <input id="rollOfUser" type="text" placeholder="enter roll number">
+            <br>
+            <br>
+            <button onclick="handleClick()">Submit Info</button>
+        </div>
+        <br>
+        <br>
+
+        <div id="print">
+            <p id="n"></p>
+            <p id="a"></p>
+            <p id="r"></p>
+        </div>
+
+    </section>
+
+    <script>
+        function handleClick() {
+
+            let age = document.getElementById("ageOfUser").value;
+            let name = document.getElementById("nameOfUser").value;
+            let roll = document.getElementById("rollOfUser").value;
+            if (age <= 0 || age > 100) {
+                window.alert("Invalid Age !! Please Enter your valid age");
+            }
+            else {
+                document.getElementById("print").style.padding = "1rem";
+                document.getElementById("n").innerHTML = "Name Entered: " + name;
+                document.getElementById("a").innerHTML = "Age Entered: " + age;
+                document.getElementById("r").innerHTML = "Roll Number: " + roll;
+            }
+        }
+    </script>
+</body>
+
+</html>
